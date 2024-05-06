@@ -1,7 +1,13 @@
-/**Es para modelar la interface de tareas */
-export interface CreateTaskDto {
-    title: number;
+import { IsString, MinLength } from 'class-validator'
+
+export class CreateTaskDto {
+    @IsString()    
+    title: string;
+
+    @IsString()
+    @MinLength(5)
     description: string;
+    
     status: boolean;
     id: number
 }
