@@ -6,13 +6,13 @@ import { TaskService } from './task.service';
 export class TaskController {
 
     taskService: TaskService;
-    
-    constructor(taskService: TaskService){
+
+    constructor(taskService: TaskService) {
         this.taskService = taskService;
     }
 
-    @Get('/getAllTask')
-    getAllTask() {
+    @Get('/')
+    getAllTask(): object {
         return this.taskService.getTask();
     }
 }

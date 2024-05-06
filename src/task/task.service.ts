@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class TaskService {
-    getTask() {
+    getTask():object{
         return [
             {
                 "dato":1,
