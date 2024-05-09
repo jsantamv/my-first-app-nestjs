@@ -11,7 +11,7 @@ export class HelloController {
     }
 
     /**Esto para parsear el numero como numero */
-    @Get('tiket/:num')
+    @Get('ticket/:num')
     getNumber(@Param('num', ParseIntPipe) num: number) {
         console.log(typeof num);
         return num + 14;
