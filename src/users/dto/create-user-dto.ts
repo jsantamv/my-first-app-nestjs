@@ -23,8 +23,8 @@ export class CreateUserDto {
     @ApiProperty({ example: "my name", description: 'The name' })
     name: string;
 
-    @IsNumber()
-    @Max(100)
-    @ApiProperty({ example: 35, description: 'The age' })
-    age: number;
+    // @IsNumber()
+    // @Max(100)
+    // @ApiProperty({ example: 35, description: 'The age' })
+    // age: number;
 }
