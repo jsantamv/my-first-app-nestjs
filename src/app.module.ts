@@ -5,6 +5,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { HelloController } from './hello/hello.controller';
 import { PaymentsModule } from './payments/payments.module';
+import { BetsModule } from './bets/bets.module';
 
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import { PaymentsModule } from './payments/payments.module';
     ProjectsModule,
     AuthModule,
     UsersModule,
-    PaymentsModule
+    PaymentsModule,
+    BetsModule
   ],
   controllers: [HelloController],
 })
